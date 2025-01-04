@@ -46,10 +46,9 @@ export default tseslint.config(
     // eslint-plugin-testing-library rules or preset only for matching testing files!
     files: ["**/__tests__/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[jt]s?(x)"],
     ...testingLibrary.configs["flat/react"],
-    ...pluginJestDom.configs["flat/recommended"],
   },
   {
-    // eslint-plugin-testing-library rules or preset only for matching testing files!
+    // eslint-plugin-jest-dom rules or preset only for matching testing files!
     files: ["**/__tests__/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[jt]s?(x)"],
     ...pluginJestDom.configs["flat/recommended"],
   }
