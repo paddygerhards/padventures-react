@@ -1,0 +1,14 @@
+[
+  {
+    "id": "1",
+    "title": "Data from JSON",
+    "content": "This post's data is loaded from a JSON file.",
+    "author": "JSON Author"
+  },
+  {
+    "id": "2",
+    "title": "Another JSON Post",
+    "content": "More data from the JSON file.",
+    "author": "Another JSON Author"
+  }
+]
