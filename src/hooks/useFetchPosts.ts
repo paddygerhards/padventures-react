@@ -17,8 +17,9 @@ const useFetchPosts = (url: string) => {
             try {
                 const response = await fetch(url);
                 if (!response.ok) {
-                    throw new Error(`HTTP error! status: ${response.status}`);
+                    throw new Error(`HTTP error! status: ${response.status.toFixed()}`);
                 }
+                // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
                 const data: Post[] = await response.json();
                 setPosts(data);
             } catch (err) {
@@ -28,7 +29,7 @@ const useFetchPosts = (url: string) => {
             }
         };
 
-        fetchPosts();
+        void fetchPosts();
     }, [url]);
 
     return { posts, loading, error };

@@ -14,7 +14,7 @@ function PostPage() {
     return <div>Error: {error}</div>;
   }
 
-  if (!posts) {
+  if (posts.length === 0) {
     return <div>No posts found.</div>;
   }
 

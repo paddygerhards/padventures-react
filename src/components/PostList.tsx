@@ -25,7 +25,7 @@ const PostList: React.FC<PostListProps> = ({ posts }) => {
     <div>
       <Filter authors={authors} onFilterChange={setFilterAuthor} />
       {filteredPosts.map((post) => (
-        <Link to={`/post/${post.id}`}>
+        <Link to={`/post/${post.id}`} key={post.id}>
           <BlogPost
             title={post.title}
             content={post.content}
